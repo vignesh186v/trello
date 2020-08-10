@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="Analyzer.MyTransformer"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="trello.testcases.testcase">
+        <methods>
+          <include name="EndReport"/>
+          <include name="StartReport"/>
+          <include name="startmethod"/>
+          <include name="process" invocation-numbers="0 0 0 0"/>
+          <include name="stopmethod"/>
+        </methods>
+      </class> <!-- trello.testcases.testcase -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
